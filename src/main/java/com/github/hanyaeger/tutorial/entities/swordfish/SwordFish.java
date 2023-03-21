@@ -23,10 +23,10 @@ public class SwordFish extends DynamicCompositeEntity implements SceneBorderCros
         HitBox hitBox = new HitBox(new Coordinate2D(0,40), 60, 2);
         addEntity(hitBox);
 
-        HitBox hitBox2 = new HitBox(new Coordinate2D(60,60), 100, 30);
+        HitBox hitBox2 = new HitBox(new Coordinate2D(60,20), 120, 40);
         addEntity(hitBox2);
 
-        HitBox hitBox3 = new HitBox(new Coordinate2D(120,40), 40, 20);
+        HitBox hitBox3 = new HitBox(new Coordinate2D(180,15), 40, 55);
         addEntity(hitBox3);
 
         SwordfishSprite swordFishSprite = new SwordfishSprite(new Coordinate2D(0, 0));
