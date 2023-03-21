@@ -4,6 +4,7 @@ import com.github.hanyaeger.api.AnchorPoint;
 import com.github.hanyaeger.api.Coordinate2D;
 import com.github.hanyaeger.api.entities.impl.TextEntity;
 import com.github.hanyaeger.api.scenes.StaticScene;
+import com.github.hanyaeger.tutorial.entities.buttons.EndButton;
 import com.github.hanyaeger.tutorial.entities.buttons.StartButton;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
@@ -33,7 +34,9 @@ public class GameOver extends StaticScene {
         gameOverText.setFont(Font.font("Roboto", FontWeight.SEMI_BOLD, 80));
         addEntity(gameOverText);
 
-        var eindKnop = new StartButton(new Coordinate2D(getWidth() / 2, getHeight() / 3), waterworld);
+        var restartKnop = new StartButton(new Coordinate2D(getWidth() / 2, getHeight() / 3), waterworld);
+        addEntity(restartKnop);
+        var eindKnop = new EndButton(new Coordinate2D(200, getHeight() /3), waterworld);
         addEntity(eindKnop);
     }
 
